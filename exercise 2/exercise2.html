@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <script>
+
+        var no1, no2, operation;
+        no1 = parseInt(prompt("Enter first number: "));
+        no2 = parseInt(prompt("Enter second number: "));
+        operation = prompt("Enter any operation (+, - , *, /): ");
+        
+        function addition(a,b)
+        {
+            return a+b;
+        }
+
+         function substraction(a,b)
+        {
+            return a-b;
+        }
+
+         function multiplication(a,b)
+        {
+            return a*b;
+        }
+
+         function division(a,b)
+        {
+            if (b !== 0) {
+                return a / b;
+            } else {
+                return "Error: Division by zero!";
+            } 
+        }
+
+        if(operation === "+")
+        {
+           result = addition(no1, no2); 
+        }
+        else if (operation === "-")
+        {
+            result = subtraction(no1, no2);
+        }
+        else if (operation === "*") 
+        {
+            result = multiplication(no1, no2);
+        } else if (operation === "/") 
+        {
+            result = division(no1, no2);
+        } else 
+        {
+            result = "Invalid operation.";
+        }
+
+        document.writeln("Result: " + result);
+    </script>
+    
+</body>
+</html>

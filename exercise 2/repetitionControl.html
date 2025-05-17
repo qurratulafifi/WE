@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        var no,bil,total=0; 
+        bil=parseInt(prompt("Number of repetitions :")); 
+        
+        for(i=0;i<bil;i++) 
+        { 
+            no=parseInt(prompt("Enter number " + (i+1) + " :"));
+            total=total+no; 
+        } 
+        document.write(total); 
+    </script>
+
+    <script> 
+    var no,bil,total=0; 
+    bil=parseInt(prompt("Number of repetitions :")); 
+    i=0; 
+    while(i<bil) 
+    { 
+    no=parseInt(prompt("Enter number " + (i+1) + " :")); 
+    total=total+no; i++; 
+    } 
+
+    document.write(total); 
+</script>
+
+</body>
+</html>

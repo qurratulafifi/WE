@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        var numbers,total=0; 
+        numbers=[1,2,3]; 
+        size=numbers.length; 
+        for(i=0;i<size;i++) 
+        { 
+            document.writeln(numbers[i]); 
+            total=total + numbers[i]; 
+        } 
+        document.writeln(" = " + total); 
+    </script>
+
+    <script> 
+    var numbers,total=0; 
+    numbers=[]; 
+    for(i=0;i<3;i++) 
+    { 
+        numbers[i]=parseInt(prompt("Enter any numbers")); 
+        total=total+numbers[i]; 
+    } 
+    for(i=0;i<3;i++) 
+    { 
+        document.writeln(numbers[i]); 
+    } 
+    document.writeln(" = " + total); 
+    </script>
+    
+</body>
+</html>
