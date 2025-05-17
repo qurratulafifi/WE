@@ -521,6 +521,15 @@ padding-bottom: 0;
   position: relative;
   padding-left: 37px;
 }
+.experience-content .experience-text .timeline-box .timeline .timeline-item img
+{
+  width: 100%;              
+  height: auto;             
+  max-height: 300px;        
+  border-radius: 8px;       
+  object-fit: cover;        
+  margin-top: 10px;  
+}
 .experience-content .experience-text .timeline-box .timeline .timeline-title
 {
   font-weight: 700;
