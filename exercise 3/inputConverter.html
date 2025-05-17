@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1</title>
+</head>
+<body>
+    <script> 
+        var quantity,total; 
+        quantity=parseFloat(prompt("Enter Quantity (RM2.55/pcs):")); 
+        total=quantity * 2.55; 
+        
+    </script> 
+
+        <table border="1"> 
+            <tr> 
+                <td>quantity</td> 
+                <td><script>document.write(quantity);</script></td> 
+            </tr> 
+            <tr> 
+                <td>Total Price</td> 
+                <td><script>document.write(total.toFixed(2));</script></td> 
+            </tr> 
+        </table>
+</body>
+</html>
