@@ -5,7 +5,7 @@ $showForm = true;
 $student = null;
 $error = "";
 
-// Step 1: Check if user submitted a matric number
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['matric'])) {
     $matric = $_POST['matric'];
     $result = $conn->query("SELECT * FROM STUDENT WHERE Matric = '$matric'");
@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['matric'])) {
 }
 ?>
 
-<!-- Step 2: Search Form -->
 <?php if ($showForm): ?>
     <form method="post">
         <label>Enter Matric Number to Edit:</label>
@@ -29,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['matric'])) {
     </form>
 <?php endif; ?>
 
-<!-- Step 3: Edit Form -->
 <?php if ($student): ?>
     <form action="update.php" method="post">
         <input type="hidden" name="matric" value="<?php echo $student['Matric']; ?>">
