@@ -5,14 +5,13 @@ $showForm = true;
 $student = null;
 $error = "";
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['matric'])) {
     $matric = $_POST['matric'];
     $result = $conn->query("SELECT * FROM STUDENT WHERE Matric = '$matric'");
 
     if ($result && $result->num_rows > 0) {
         $student = $result->fetch_assoc();
-        $showForm = false; // move to the update form
+        $showForm = false; 
     } else {
         $error = "Matric number not found.";
     }
